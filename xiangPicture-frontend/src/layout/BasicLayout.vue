@@ -2,15 +2,13 @@
   <div id="basicLayout">
     <a-layout style="min-height: 100vh">
       <a-layout-header class="header">
-        <div id="globalHeader">
-          <a-menu v-model:selectedKeys="current" mode="horizontal" :items="items"/>
-        </div>
+        <GlobalHeader/>
       </a-layout-header>
       <a-layout-content class="content">
         <router-view/>
       </a-layout-content>
       <a-layout-footer class="footer">
-        <a href="https://www.codefather.cn" target="_blank"> 编程导航 by 程序员鱼皮 </a>
+        <a href="https://www.github.com/xiangxiang62" target="_blank">香香的 GitHub</a>
       </a-layout-footer>
     </a-layout>
   </div>
@@ -22,6 +20,9 @@ import GlobalHeader from "@/components/GlobalHeader.vue";
 
 
 <style scoped>
+#basicLayout {
+}
+
 #basicLayout .footer {
   background: #efefef;
   padding: 16px;
@@ -32,11 +33,11 @@ import GlobalHeader from "@/components/GlobalHeader.vue";
   text-align: center;
 }
 
-#basicLayout .content {
-  background: linear-gradient(to right, #fefefe, #fff);
-  margin-bottom: 28px;
-  padding: 20px;
-}
+ #basicLayout .content {
+   background: linear-gradient(to right, #fefefe, #fff);
+   margin-bottom: 28px;
+   padding: 20px;
+ }
 
 #basicLayout .header {
   padding-inline: 20px;
@@ -46,3 +47,4 @@ import GlobalHeader from "@/components/GlobalHeader.vue";
 }
 
 </style>
+
