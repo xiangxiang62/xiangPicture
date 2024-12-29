@@ -1,9 +1,14 @@
+<template>
+  <div id="homePage">
+    <h1>{{ msg }}</h1>
+  </div>
+</template>
+
 <script setup lang="ts">
-import TheWelcome from '../components/TheWelcome.vue'
+const msg = "享 · 智能云图库待开发界面~";
 </script>
 
-<template>
-  <main>
-    <TheWelcome />
-  </main>
-</template>
+<style scoped>
+#homePage {
+}
+</style>
