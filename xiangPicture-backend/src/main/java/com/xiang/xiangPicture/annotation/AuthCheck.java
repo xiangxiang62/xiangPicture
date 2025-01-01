@@ -13,5 +13,4 @@ public @interface AuthCheck {
      * 必须有某个角色
      */
     String mustRole() default "";
-    // 测试推送
 }
