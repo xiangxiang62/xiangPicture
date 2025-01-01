@@ -1,5 +1,11 @@
 package com.xiang.xiangPicture.model.dto.user;
 
+import com.xiang.xiangPicture.common.PageRequest;
+import lombok.Data;
+import lombok.EqualsAndHashCode;
+
+import java.io.Serializable;
+
 @EqualsAndHashCode(callSuper = true)
 @Data
 public class UserQueryRequest extends PageRequest implements Serializable {

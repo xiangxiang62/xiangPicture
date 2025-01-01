@@ -1,7 +1,7 @@
 package com.xiang.xiangPicture.mapper;
 
-import com.xiang.xiangPicture.domain.User;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import com.xiang.xiangPicture.model.entity.User;
 
 /**
 * @author 73148

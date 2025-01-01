@@ -1,4 +1,4 @@
-package com.xiang.xiangPicture.model.vo;
+package com.xiang.xiangPicture.model.vo.user;
 
 import lombok.Data;
 
