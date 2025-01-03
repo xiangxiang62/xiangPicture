@@ -1,30 +1,21 @@
 package com.xiang.xiangPicture.controller;
 
-import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.xiang.xiangPicture.annotation.AuthCheck;
 import com.xiang.xiangPicture.common.BaseResponse;
-import com.xiang.xiangPicture.common.DeleteRequest;
 import com.xiang.xiangPicture.common.ResultUtils;
 import com.xiang.xiangPicture.constant.UserConstant;
 import com.xiang.xiangPicture.exception.BusinessException;
 import com.xiang.xiangPicture.exception.ErrorCode;
-import com.xiang.xiangPicture.exception.ThrowUtils;
 import com.xiang.xiangPicture.manage.CosManager;
-import com.xiang.xiangPicture.model.dto.user.*;
-import com.xiang.xiangPicture.model.entity.User;
-import com.xiang.xiangPicture.model.vo.user.LoginUserVO;
-import com.xiang.xiangPicture.model.vo.user.UserVO;
-import com.xiang.xiangPicture.service.UserService;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.BeanUtils;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestPart;
+import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
 
 import javax.annotation.Resource;
-import javax.servlet.http.HttpServletRequest;
 import java.io.File;
-import java.security.CodeSigner;
-import java.util.List;
 
 /**
  * @ClassName UserController

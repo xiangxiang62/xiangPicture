@@ -10,7 +10,6 @@ import com.xiang.xiangPicture.constant.UserConstant;
 import com.xiang.xiangPicture.exception.BusinessException;
 import com.xiang.xiangPicture.exception.ErrorCode;
 import com.xiang.xiangPicture.exception.ThrowUtils;
-import com.xiang.xiangPicture.manage.CosManager;
 import com.xiang.xiangPicture.model.dto.picture.PictureEditRequest;
 import com.xiang.xiangPicture.model.dto.picture.PictureQueryRequest;
 import com.xiang.xiangPicture.model.dto.picture.PictureUpdateRequest;
@@ -27,10 +26,7 @@ import org.springframework.web.multipart.MultipartFile;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
-import java.io.File;
-import java.util.Arrays;
 import java.util.Date;
-import java.util.List;
 
 /**
  * @ClassName UserController
